@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let numbers = [];
+        // for (let i = 0; i < 10; i++) {
+        // let number = parseInt(prompt(`Nhập phần tử thứ ${i + 1}: `));
+        // numbers.push(number);
+        // }
+        // let count = 0;
+        // for (let i = 0; i < numbers.length; i++) {
+        // if (numbers[i] >= 10) {
+        //     count++;
+        // }
+        // }
+        // console.log(`Có ${count} số nguyên lớn hơn hoặc bằng 10 trong mảng.`);
+        let count=0;
+        let numbers=[];
+        do {
+            let num=+prompt("mời bạn nhập số");
+            if (Number.isInteger(num)) {
+                count++;
+                if (num>10) {
+                    numbers.push(num)
+                }
+            }else{
+                console.log("số bạn nhập không phải là số nguyên nhập lại");
+            }
+        } while (count<5);
+        console.log(numbers);
+    </script>
+</body>
+</html>

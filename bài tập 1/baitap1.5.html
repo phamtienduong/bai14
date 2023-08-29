@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            // Khởi tạo chuỗi
+    let str = prompt("Nhập vào chuỗi: ");
+
+    // Tách các từ trong chuỗi thành mảng
+    let words = str.split(" ");
+
+    // Đếm số nguyên âm trong chuỗi
+    let count = 0;
+    for (let i = 0; i < words.length; i++) {
+    let num = parseInt(words[i]);
+    if (!isNaN(num) && num < 0) {
+        count++;
+    }
+    }
+
+    // Hiển thị kết quả
+    console.log(`Số nguyên âm có trong chuỗi là: ${count}`);
+    </script>
+</body>
+</html>
